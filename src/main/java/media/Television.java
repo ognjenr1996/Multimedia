@@ -5,7 +5,9 @@ package media;
 public class Television {
     private int volume = 0;
     private int currentProgram = 1;
-    private boolean turnOn = false;
+    private boolean turnOn;
+    
+
     
     
     public int getVolume() {
@@ -32,6 +34,13 @@ public class Television {
     
     public void setTurnOn(boolean newturnOn) {
         this.turnOn = newturnOn;
+    }
+   
+    
+    public void info() {
+        System.out.println("Program na televizoru je: "+ this.getCurrentProgram());
+        System.out.println("Jačina zvuka je: " + this.getVolume());
+        System.out.println("Televizor je upaljen: "+ this.getTurnOn());
     }
 }
 

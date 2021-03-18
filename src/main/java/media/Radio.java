@@ -8,6 +8,17 @@ public class Radio {
     private char band = 'F';
     
     
+    
+    
+    public Radio(double fmFrequency, int amFrequency, char band) {
+        this.fmFrequency = fmFrequency;
+        this.amFrequency = amFrequency;
+        this.band = band;
+    }
+
+    
+    
+    
     public double getFmFrequency() {
         return this.fmFrequency;
     }
@@ -34,4 +45,10 @@ public class Radio {
         this.band = newBend;
     }
     
+    
+    public void radioInfo() {
+         System.out.println("FM frequency is: " + this.getFmFrequency());
+         System.out.println("AM frequency is: " + this.getAmFrequency());
+         System.out.println("Band is: " + this.getBand());
+    }
 }
